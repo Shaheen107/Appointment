@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52409C6B2C5EC29600C6CE26 /* AppointmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C6A2C5EC29600C6CE26 /* AppointmentApp.swift */; };
+		52409C6F2C5EC29700C6CE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52409C6E2C5EC29700C6CE26 /* Assets.xcassets */; };
+		52409C722C5EC29700C6CE26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52409C712C5EC29700C6CE26 /* Preview Assets.xcassets */; };
+		52409C7C2C5EC29700C6CE26 /* AppointmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C7B2C5EC29700C6CE26 /* AppointmentTests.swift */; };
+		52409C862C5EC29700C6CE26 /* AppointmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C852C5EC29700C6CE26 /* AppointmentUITests.swift */; };
+		52409C882C5EC29700C6CE26 /* AppointmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C872C5EC29700C6CE26 /* AppointmentUITestsLaunchTests.swift */; };
+		52409C952C5EC2B000C6CE26 /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C942C5EC2B000C6CE26 /* AppointmentModel.swift */; };
+		52409C972C5EC2CA00C6CE26 /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C962C5EC2CA00C6CE26 /* AppointmentViewModel.swift */; };
+		52409C992C5EC30400C6CE26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C982C5EC30400C6CE26 /* ContentView.swift */; };
+		52409C9B2C5EC31500C6CE26 /* AddAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C9A2C5EC31500C6CE26 /* AddAppointmentView.swift */; };
+		52409C9D2C5EC4BC00C6CE26 /* EditAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C9C2C5EC4BC00C6CE26 /* EditAppointmentView.swift */; };
+		52409C9F2C5EC4E000C6CE26 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409C9E2C5EC4E000C6CE26 /* CalendarView.swift */; };
+		52409CA12C5EC4F300C6CE26 /* SearchableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409CA02C5EC4F300C6CE26 /* SearchableContentView.swift */; };
+		52409CA42C5EC58300C6CE26 /* scheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409CA22C5EC50700C6CE26 /* scheduleNotification.swift */; };
+		52409CA72C5EC8C900C6CE26 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409CA52C5EC8C000C6CE26 /* MyApp.swift */; };
+		52409CA92C5ECB9E00C6CE26 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409CA82C5ECB9E00C6CE26 /* DetailView.swift */; };
+		52409CAB2C5ECD3300C6CE26 /* DateFormatterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409CAA2C5ECD3300C6CE26 /* DateFormatterUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52409C782C5EC29700C6CE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52409C5F2C5EC29600C6CE26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52409C662C5EC29600C6CE26;
+			remoteInfo = Appointment;
+		};
+		52409C822C5EC29700C6CE26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52409C5F2C5EC29600C6CE26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52409C662C5EC29600C6CE26;
+			remoteInfo = Appointment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52409C672C5EC29600C6CE26 /* Appointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appointment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52409C6A2C5EC29600C6CE26 /* AppointmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentApp.swift; sourceTree = "<group>"; };
+		52409C6E2C5EC29700C6CE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52409C712C5EC29700C6CE26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52409C772C5EC29700C6CE26 /* AppointmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppointmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52409C7B2C5EC29700C6CE26 /* AppointmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTests.swift; sourceTree = "<group>"; };
+		52409C812C5EC29700C6CE26 /* AppointmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppointmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52409C852C5EC29700C6CE26 /* AppointmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentUITests.swift; sourceTree = "<group>"; };
+		52409C872C5EC29700C6CE26 /* AppointmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52409C942C5EC2B000C6CE26 /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
+		52409C962C5EC2CA00C6CE26 /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		52409C982C5EC30400C6CE26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52409C9A2C5EC31500C6CE26 /* AddAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentView.swift; sourceTree = "<group>"; };
+		52409C9C2C5EC4BC00C6CE26 /* EditAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppointmentView.swift; sourceTree = "<group>"; };
+		52409C9E2C5EC4E000C6CE26 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		52409CA02C5EC4F300C6CE26 /* SearchableContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableContentView.swift; sourceTree = "<group>"; };
+		52409CA22C5EC50700C6CE26 /* scheduleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleNotification.swift; sourceTree = "<group>"; };
+		52409CA52C5EC8C000C6CE26 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		52409CA82C5ECB9E00C6CE26 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		52409CAA2C5ECD3300C6CE26 /* DateFormatterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52409C642C5EC29600C6CE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C742C5EC29700C6CE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C7E2C5EC29700C6CE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52409C5E2C5EC29600C6CE26 = {
+			isa = PBXGroup;
+			children = (
+				52409C692C5EC29600C6CE26 /* Appointment */,
+				52409C7A2C5EC29700C6CE26 /* AppointmentTests */,
+				52409C842C5EC29700C6CE26 /* AppointmentUITests */,
+				52409C682C5EC29600C6CE26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52409C682C5EC29600C6CE26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52409C672C5EC29600C6CE26 /* Appointment.app */,
+				52409C772C5EC29700C6CE26 /* AppointmentTests.xctest */,
+				52409C812C5EC29700C6CE26 /* AppointmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52409C692C5EC29600C6CE26 /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				52409C6A2C5EC29600C6CE26 /* AppointmentApp.swift */,
+				52409C982C5EC30400C6CE26 /* ContentView.swift */,
+				52409CA82C5ECB9E00C6CE26 /* DetailView.swift */,
+				52409C942C5EC2B000C6CE26 /* AppointmentModel.swift */,
+				52409CAA2C5ECD3300C6CE26 /* DateFormatterUtil.swift */,
+				52409C962C5EC2CA00C6CE26 /* AppointmentViewModel.swift */,
+				52409C9A2C5EC31500C6CE26 /* AddAppointmentView.swift */,
+				52409C9E2C5EC4E000C6CE26 /* CalendarView.swift */,
+				52409CA02C5EC4F300C6CE26 /* SearchableContentView.swift */,
+				52409C9C2C5EC4BC00C6CE26 /* EditAppointmentView.swift */,
+				52409CA22C5EC50700C6CE26 /* scheduleNotification.swift */,
+				52409CA52C5EC8C000C6CE26 /* MyApp.swift */,
+				52409C6E2C5EC29700C6CE26 /* Assets.xcassets */,
+				52409C702C5EC29700C6CE26 /* Preview Content */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		52409C702C5EC29700C6CE26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52409C712C5EC29700C6CE26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52409C7A2C5EC29700C6CE26 /* AppointmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				52409C7B2C5EC29700C6CE26 /* AppointmentTests.swift */,
+			);
+			path = AppointmentTests;
+			sourceTree = "<group>";
+		};
+		52409C842C5EC29700C6CE26 /* AppointmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52409C852C5EC29700C6CE26 /* AppointmentUITests.swift */,
+				52409C872C5EC29700C6CE26 /* AppointmentUITestsLaunchTests.swift */,
+			);
+			path = AppointmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52409C662C5EC29600C6CE26 /* Appointment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52409C8B2C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "Appointment" */;
+			buildPhases = (
+				52409C632C5EC29600C6CE26 /* Sources */,
+				52409C642C5EC29600C6CE26 /* Frameworks */,
+				52409C652C5EC29600C6CE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Appointment;
+			productName = Appointment;
+			productReference = 52409C672C5EC29600C6CE26 /* Appointment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52409C762C5EC29700C6CE26 /* AppointmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52409C8E2C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "AppointmentTests" */;
+			buildPhases = (
+				52409C732C5EC29700C6CE26 /* Sources */,
+				52409C742C5EC29700C6CE26 /* Frameworks */,
+				52409C752C5EC29700C6CE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52409C792C5EC29700C6CE26 /* PBXTargetDependency */,
+			);
+			name = AppointmentTests;
+			productName = AppointmentTests;
+			productReference = 52409C772C5EC29700C6CE26 /* AppointmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52409C802C5EC29700C6CE26 /* AppointmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52409C912C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "AppointmentUITests" */;
+			buildPhases = (
+				52409C7D2C5EC29700C6CE26 /* Sources */,
+				52409C7E2C5EC29700C6CE26 /* Frameworks */,
+				52409C7F2C5EC29700C6CE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52409C832C5EC29700C6CE26 /* PBXTargetDependency */,
+			);
+			name = AppointmentUITests;
+			productName = AppointmentUITests;
+			productReference = 52409C812C5EC29700C6CE26 /* AppointmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52409C5F2C5EC29600C6CE26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					52409C662C5EC29600C6CE26 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					52409C762C5EC29700C6CE26 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 52409C662C5EC29600C6CE26;
+					};
+					52409C802C5EC29700C6CE26 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 52409C662C5EC29600C6CE26;
+					};
+				};
+			};
+			buildConfigurationList = 52409C622C5EC29600C6CE26 /* Build configuration list for PBXProject "Appointment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52409C5E2C5EC29600C6CE26;
+			productRefGroup = 52409C682C5EC29600C6CE26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52409C662C5EC29600C6CE26 /* Appointment */,
+				52409C762C5EC29700C6CE26 /* AppointmentTests */,
+				52409C802C5EC29700C6CE26 /* AppointmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52409C652C5EC29600C6CE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52409C722C5EC29700C6CE26 /* Preview Assets.xcassets in Resources */,
+				52409C6F2C5EC29700C6CE26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C752C5EC29700C6CE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C7F2C5EC29700C6CE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52409C632C5EC29600C6CE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52409C972C5EC2CA00C6CE26 /* AppointmentViewModel.swift in Sources */,
+				52409C9F2C5EC4E000C6CE26 /* CalendarView.swift in Sources */,
+				52409CA42C5EC58300C6CE26 /* scheduleNotification.swift in Sources */,
+				52409CA72C5EC8C900C6CE26 /* MyApp.swift in Sources */,
+				52409C9B2C5EC31500C6CE26 /* AddAppointmentView.swift in Sources */,
+				52409CA92C5ECB9E00C6CE26 /* DetailView.swift in Sources */,
+				52409C952C5EC2B000C6CE26 /* AppointmentModel.swift in Sources */,
+				52409C992C5EC30400C6CE26 /* ContentView.swift in Sources */,
+				52409C9D2C5EC4BC00C6CE26 /* EditAppointmentView.swift in Sources */,
+				52409CA12C5EC4F300C6CE26 /* SearchableContentView.swift in Sources */,
+				52409CAB2C5ECD3300C6CE26 /* DateFormatterUtil.swift in Sources */,
+				52409C6B2C5EC29600C6CE26 /* AppointmentApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C732C5EC29700C6CE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52409C7C2C5EC29700C6CE26 /* AppointmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52409C7D2C5EC29700C6CE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52409C882C5EC29700C6CE26 /* AppointmentUITestsLaunchTests.swift in Sources */,
+				52409C862C5EC29700C6CE26 /* AppointmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52409C792C5EC29700C6CE26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52409C662C5EC29600C6CE26 /* Appointment */;
+			targetProxy = 52409C782C5EC29700C6CE26 /* PBXContainerItemProxy */;
+		};
+		52409C832C5EC29700C6CE26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52409C662C5EC29600C6CE26 /* Appointment */;
+			targetProxy = 52409C822C5EC29700C6CE26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52409C892C5EC29700C6CE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52409C8A2C5EC29700C6CE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52409C8C2C5EC29700C6CE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Appointment/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Appointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52409C8D2C5EC29700C6CE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Appointment/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Appointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52409C8F2C5EC29700C6CE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppointmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appointment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Appointment";
+			};
+			name = Debug;
+		};
+		52409C902C5EC29700C6CE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppointmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appointment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Appointment";
+			};
+			name = Release;
+		};
+		52409C922C5EC29700C6CE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppointmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Appointment;
+			};
+			name = Debug;
+		};
+		52409C932C5EC29700C6CE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppointmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Appointment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52409C622C5EC29600C6CE26 /* Build configuration list for PBXProject "Appointment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52409C892C5EC29700C6CE26 /* Debug */,
+				52409C8A2C5EC29700C6CE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52409C8B2C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "Appointment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52409C8C2C5EC29700C6CE26 /* Debug */,
+				52409C8D2C5EC29700C6CE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52409C8E2C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "AppointmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52409C8F2C5EC29700C6CE26 /* Debug */,
+				52409C902C5EC29700C6CE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52409C912C5EC29700C6CE26 /* Build configuration list for PBXNativeTarget "AppointmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52409C922C5EC29700C6CE26 /* Debug */,
+				52409C932C5EC29700C6CE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52409C5F2C5EC29600C6CE26 /* Project object */;
+}
